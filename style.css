@@ -1,0 +1,146 @@
+
+/* Josh W Comeau's Custom CSS Reset */
+
+/* Box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  /* Typographic tweaks */
+body {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+/* Improve media defaults */ 
+img, video, audio, canvas, iframe, embed, object {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove built-in form typography styles */
+button, input, optgroup, select, textarea {
+  font: "karla";
+}
+
+/* Avoid text overflows */
+pre, code, textarea {
+  overflow-wrap: break-word;
+}
+
+/* Create a root stacking context */
+html {
+  position: relative;
+  z-index: 0;
+}
+/* -------------------------------- */
+/* Josh W Comeau's Custom CSS Reset */
+
+  
+:root{ 
+  --karla: "Karla";
+  --LightGreen: hsl(148, 38%, 91%);
+  --mediumGreen: hsl(169, 82%, 27%);
+  --Red: hsl(0, 66%, 54%);
+  --White: hsl(0, 0%, 100%);
+  --mediumGrey: hsl(186, 15%, 59%);
+  --darkGrey: hsl(187, 24%, 22%);
+}
+
+body{ 
+  font-family: var(--karla);
+  background-color: var(--LightGreen);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+}
+
+main { 
+  border: none;
+  border-radius: 1rem;
+  padding: 2em;
+  margin: 0 1rem;
+  width: min(750px,90%);
+}
+
+h1 { 
+  padding: 1rem 0;
+}
+
+.form-container{ 
+  background-color: var(--White);
+}
+.email { 
+  margin: 1rem 0 ;
+}
+
+.fullname .col { 
+  border: none;
+  padding: 0;
+}
+.fullname .col input { 
+  width: 100%;
+  margin: 0;
+}
+
+.form input, textarea { 
+  width: 100%;
+  border: 1px solid var(--mediumGrey);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+.row{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.col { 
+  width: 100%;
+  border: 1px solid var(--mediumGrey);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+.col input { 
+  width: 13px;
+  margin: 0.5rem;
+}
+
+.submit-field { 
+  display: flex;
+  padding: 1rem 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.submit-field input { 
+  margin-right: 1rem;
+}
+
+button { 
+  background-color: var(--mediumGreen);
+  color: var(--White);
+  padding: 1rem 0;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+
+}
+
+@media (width < 500px ) { 
+  .fullname, .query { 
+    display: flex;
+    flex-direction: column;
+  }
+
+}
