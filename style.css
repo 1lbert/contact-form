@@ -10,7 +10,6 @@
   /* Typographic tweaks */
 body {
   line-height: 1.5;
-  font-size: 1rem;
 }
 
 /* Improve media defaults */ 
@@ -64,7 +63,6 @@ main {
   border-radius: 1rem;
   padding: 2em;
   margin: 0 1rem;
-  width: min(750px,90%);
 }
 
 h1 { 
@@ -111,7 +109,7 @@ h1 {
 }
 
 .col input { 
-  width: 13px;
+  width: 1rem;
   margin: 0.5rem;
 }
 
@@ -141,6 +139,11 @@ button {
   .fullname, .query { 
     display: flex;
     flex-direction: column;
+  }
+
+  main { 
+    margin: 1rem;
+    width: 100%;
   }
 
 }
